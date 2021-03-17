@@ -1,0 +1,32 @@
+@import "theme";
+
+.CustomSelect {
+  height: inherit;
+  border-radius: $themeBorderRadius;
+  background: $themeBackground3;
+  color: $themeFontColor3;
+  padding: 0 10px;
+  border: $themeInputBorder;
+  text-transform: capitalize !important;
+  >div {
+    min-width: 100px;
+  }
+
+  .MuiInput-root {
+    height: inherit;
+    border-radius: $themeBorderRadius;
+    background: $themeBackground3;
+    color: $themeFontColor3;
+    padding: 0 10px;
+  }
+  svg {
+    color: $themeFontColor3;
+    fill: $themeFontColor3;
+  }
+  .MuiInput-root::before {
+    display: none;
+  }
+  .MuiInput-root::after {
+    display: none;
+  }
+}

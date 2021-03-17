@@ -1,0 +1,30 @@
+@import "theme";
+
+.CustomInput {
+  &.small {
+    width: 100px;
+    max-width: 100px;
+    min-width: 80px;
+    .customInputElement {
+      width: inherit;
+    }
+  }
+  &.normal {
+    width: 130px;
+    max-width: 130px;
+    min-width: 80px;
+    .customInputElement {
+      width: inherit;
+    }
+  }
+  .customInputElement {
+    color: $themeFontColor3;
+    background: $themeBackground3;
+    border-radius: $themeBorderRadius;
+    border: $themeInputBorder;
+    height: 32px;
+    padding: 0 0 0 5px;
+    margin: 0;
+    width: 100%;
+  }
+}

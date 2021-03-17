@@ -1,0 +1,121 @@
+@import "theme";
+
+.MarketWidget {
+  >div {
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .infoBar {
+    padding: 0 10px;
+    height: 40px;
+    background: $themeBackground2;
+    border-radius: $themeBorderRadius;
+    .val {
+      font-size: 17px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .val1 {
+      color: $themeFontColor3;
+    }
+    .val2 {
+      color: $themeFontColorPositive;
+    }
+    .val3 {
+      color: $themeFontColor3;
+    }
+    .val4 {
+      color: $themeFontColorPositive;
+    }
+    .val5 {
+      color: $themeFontColorNegative;
+    }
+  }
+  .settings {
+    height: 40px;
+    background: $themeBackground2;
+    border-radius: $themeBorderRadius;
+    .role {
+      color: $themeFontColor3;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+    }
+    .selectContainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 1;
+      height: 32px;
+    }
+  }
+  .tradeModuleContainer {
+    display: flex;
+    flex-direction: row;
+    .tradeModule {
+      width: calc(50% - 5px);
+      display: flex;
+      flex-direction: column;
+      .tradeModulePaper {
+        padding: 5px;
+        background: $themeBackground2;
+        .trackingBar {
+          padding-bottom: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .footer {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .actionContainer {
+          .actionInputs {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+          }
+          .actions {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 0;
+            >div {
+              width: 50%;
+            }
+            .miniActions {
+              margin-right: 5px;
+              button {
+                margin: 3px;
+                width: calc(50% - 6px);
+                background: $themeBackground4;
+                color: $themeFontColor3;
+              }
+            }
+            .mainAction {
+              margin-left: 5px;
+              button {
+                margin: 3px;
+                width: calc(100% - 6px);
+                height: calc(100% - 6px);
+                background: $themePositiveAction;
+                color: $themeFontColor3;
+                text-transform: initial;
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
